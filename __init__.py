@@ -1,6 +1,6 @@
 import main
 import universal_utils
-import mlops
+from models.utils_models import * 
 import ci_cmd_library
 
 

@@ -1,6 +1,9 @@
 ### Main entrypoint for synavate-utils
+from models.utils_models import SynavateUtils
 
-def main() -> None:
+def main() -> SynavateUtils:
+    return SynavateUtils
+    
     
     
     

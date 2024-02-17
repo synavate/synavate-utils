@@ -1,7 +1,6 @@
 from pydantic import BaseModel, Validation, Field
-from typing import Dict, List, Union
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import List, Optional, Dict, Union
 
 
 @dataclass
