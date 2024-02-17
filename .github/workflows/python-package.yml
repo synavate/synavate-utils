@@ -28,12 +28,11 @@ jobs:
       uses: snok/install-poetry@v1
     - name: Install dependencies
       run: |
-        cd ../
-        poetry export -f requirements.txt --output requirements.txt --without-hashes
+        poetry export -f ../requirements.txt --output requirements.txt --without-hashes
         poetry install
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt
+        if [ -f requirements.txt ]; then pip install -r ../requirements.txt
         tree -I '.env|venv|docs|requirements.txt|public|common|node_modules' > tree.txt
         poetry build; fi
         
