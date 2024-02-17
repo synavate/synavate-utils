@@ -2,3 +2,5 @@ venv/
 deployment-utils/
 .env
 _ENV
+_config
+
