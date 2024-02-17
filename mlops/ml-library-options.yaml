@@ -1,8 +1,10 @@
 llms-config:
-  models: ["gpt-3.5-turbo", "gpt-4", "anthropic"]
+  models:
+    - gpt-3.5-turbo
+    - gpt-4
+    - anthropic
   temperature: 0
   max_tokens: 500
-
 
 mlops-libraries:
   mlflow:
@@ -11,9 +13,9 @@ mlops-libraries:
     active: false
   langchain:
     active: true
-  llama-index: #Chunking and other custom libraries
+  llama-index:
     active: false
-  humanloop: #Prompt Engineering
+  humanloop:
     active: true
 
 embeddings-libraries:
@@ -23,12 +25,12 @@ embeddings-libraries:
     active: true
 
 vector-libraries:
-#Choose one of many ml-libraries
   faiss:
     active: false
-    index: """
+    index: ""
   qdrant:
     active: true
-    index: ${project_name}-index
+    index: ${project_name}-index || index-0
   pinecone:
     active: false
+

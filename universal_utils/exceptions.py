@@ -1,3 +1,5 @@
+''' A set of custom exceptions which are extensible'''
+
 class CustomError(Exception):
     """Base class for custom errors."""
     pass

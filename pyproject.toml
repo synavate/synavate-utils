@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "synavate-utils"
+version = "0.1.0"
+description = "synavate utils"
+authors = ["snyata <core@synavate.tech>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tree = "^0.2.4"
+uuid = "^1.30"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
