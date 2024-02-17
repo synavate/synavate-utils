@@ -4,13 +4,29 @@ from dotenv import load_dotenv, find_dotenv
 from typing import List, Union, Tuple, Dict
 
 load_dotenv(find_dotenv())
-mlops_cred: Dict = {}
+_llm_creds: Dict = {}
+_mlops_creds: Dict = {}
+_svc_config: Dict = {}
 
-list_mlops = []
+project_mlops = []
 
 
-#List of configs
-mlops_cred["openai_api_key"] = os.getenv("OPENAI_API_KEY")
+#List of llm configs
+llm_creds["openai_api_key"] = os.getenv("OPENAI_API_KEY")
+
+#list of mlops
+mlops_creds["humanloop_api"] = os.getenv("OPENAI_API_KEY")
+mlops_creds = os.getenv("WANDB_API_KEY")
+mlops_creds = os.getenv("MLFLOW_API_KEY")
+#mlops_creds = os.getenv("")
+#mlops_creds = os.getenv("")
+#mlops_creds = os.getenv("")
+#mlops_creds = os.getenv("")
+#mlops_creds = os.getenv("")
+
+
+#Host config
+mlflow_
 
     
     
