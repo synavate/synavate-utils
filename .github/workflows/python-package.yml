@@ -28,7 +28,6 @@ jobs:
       uses: snok/install-poetry@v1
     - name: Install dependencies
       run: |
-        poetry export -f requirements.txt --output requirements.txt --without-hashes
         poetry install --no-root-dir
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
