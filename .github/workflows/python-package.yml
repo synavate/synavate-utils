@@ -28,7 +28,7 @@ jobs:
       uses: snok/install-poetry@v1
     - name: Install dependencies
       run: |
-        cd ..
+        cd ../
         poetry export -f requirements.txt --output requirements.txt --without-hashes
         poetry install
         python -m pip install --upgrade pip
