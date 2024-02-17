@@ -32,7 +32,7 @@ def select_library(name, initial_version, author, description, license):
         "license": license
     }
     lang = "python"  # Assuming the project language is Python
-    with open(f"{name}-{lang}.yaml", "w") as outfile:
+    with open(f"config-NAME.yaml", "w") as outfile:
         yaml.dump(project_config, outfile)
 
     # Print instructions

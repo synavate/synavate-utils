@@ -1,4 +1,7 @@
-def main():
+### Main entrypoint for synavate-utils
+
+def main() -> None:
+    
     
     
     

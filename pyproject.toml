@@ -13,6 +13,8 @@ uuid = "^1.30"
 colorama = "^0.4.6"
 ecs-logging = "^2.1.0"
 python-dotenv = "^1.0.1"
+humanloop = "^0.7.8"
+pydantic = "^2.6.1"
 
 
 [tool.poetry.group.dev.dependencies]

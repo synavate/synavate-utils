@@ -3,9 +3,11 @@ import openai
 from dotenv import load_dotenv, find_dotenv
 from typing import List, Union, Tuple, Dict
 
+load_dotenv(find_dotenv())
+
 #import .env files
 
-load_dotenv(find_dotenv())
+
 _llm_creds: Dict = {}
 _mlops_creds: Dict = {}
 _svc_config: Dict = {}
